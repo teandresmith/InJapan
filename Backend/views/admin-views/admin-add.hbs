@@ -1,0 +1,19 @@
+
+<h1 class="form-header">Add Blog</h1>
+<div class="form-container">
+    <form class="form" action="/admin/add" method="POST">
+    <label for="title">Title</label>
+    <input required type="text" name="title" id="title" value="{{title}}">
+    <label for="subtitle">Subtitle</label>
+    <input required type="text" name="subtitle" id="subtitle" value="{{subtitle}}">
+    <label for="image">Image</label>
+    <input required type="text" name="image" id="image" value="{{image}}">
+    <label for="description">Description</label>
+    <input required type="text" name="description" id="description" value="{{description}}">
+    <label for="tags">Tags</label>
+    <input required type="text" name="tags" id="tags" value="{{tags}}">
+    <label for="body">Body</label>
+    <textarea required class="input" name="body" id="body" cols="30" rows="10" placeholder="Enter Message. . .">{{body}}</textarea>
+    <input class="submit" type="submit" value="Submit">
+</form>
+</div>

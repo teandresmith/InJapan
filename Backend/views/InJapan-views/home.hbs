@@ -1,0 +1,52 @@
+<div class="hero">
+    <div class="hero-text">
+        <p>Hi - Welcome to InJapan</p>
+        <h1>A blog that tells raw and uncut information about living in Japan from a foreigners perspective
+        </h1>
+    </div>
+
+</div>
+
+<main class="blog-content-wrapper">
+    {{#if blogPosts}}
+    {{#each blogPosts}}
+    <div class="blog-post">
+        <div class="blog-image-wrapper">
+            <img class="blog-image" src="{{ image }}"></img>
+        </div>
+        <div class="blog-post-info">
+            <h4>{{ description }}</h4>
+            <button onclick="window.location.href='/blogs/{{slug}}';" class="blog-post-button">Read More...</button>
+        </div>
+    </div>
+    {{/each}}
+    {{else}}
+    <p>Nothing here</p>
+    {{/if}}
+</main>
+
+<section class="contact">
+    <h1 id="contact-anchor">Want to Contact Me?</h1>
+    <form class="contact-form" action="/" method="POST">
+        <div class="form-elements">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name. . .">
+        </div>
+        <div class="form-elements">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Contact Email. . .">
+        </div>
+        <div class="form-elements message-box">
+            <label for="message">Message</label>
+            <textarea class="input" name="message" id="message" cols="30" rows="10"
+                placeholder="Enter Message. . ."></textarea>
+        </div>
+        <div class="form-elements button">
+            <input type="submit" id="button" value="Submit">
+        </div>
+    </form>
+</section>
+<div onclick="topfunction()" class="sticky-arrow hide"> <i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+<script src="/js/home.js"></script>
+
+

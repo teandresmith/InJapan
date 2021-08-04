@@ -1,0 +1,14 @@
+
+<main class="all-blogs-container">
+    <h2 class="section-title">Blogs</h2>
+    {{#each blogs}}
+    <a class="list-wrapper" href="/blogs/{{slug}}">
+        <section class="info">
+            <h2 class="title">{{this.title}}</h2>
+            <h5 class="description">{{this.description}}</h5>
+            <small class="date">{{this.dateCreatedOn}}</small>
+        </section>
+    </a>
+
+    {{/each}}
+</main>

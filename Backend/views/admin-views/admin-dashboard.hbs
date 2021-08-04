@@ -1,0 +1,22 @@
+<main class="list-container">
+    <h1 class="header">Admin Dashboard</h1>
+    {{#if blogs}}
+    {{#each blogs}}
+    <section class="blog">
+        <h2 class="title">{{this.title}}</h2>
+        <h5 class="description">{{ this.description }}</h5>
+        <small class="date">{{ this.dateCreatedOn}}</small><br>
+
+        <div class="button-group">
+            <a class="edit" href="/admin/edit/{{ this._id }}">Edit</a>
+
+            <form action="/admin/{{this._id}}?_method=DELETE" method="POST">
+                <button type="submit" class="delete">Delete</button>
+            </form>
+        </div>
+
+
+    </section>
+    {{/each}}
+    {{/if}}
+</main>

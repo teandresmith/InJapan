@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link id="css-sheet-index" rel="stylesheet" href="/css/InJapan/view-all.css">
+
+    <title>InJapan</title>
+</head>
+
+<body>
+    <div class="entire-container">
+        <div class="blog-container">
+
+            {{> InJapan/_injapan-nav}}
+            {{{body}}}
+            {{> InJapan/_injapan-footer}}
+            
+            <div onclick="topfunction()" class="sticky-arrow hide"> <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <script src="/js/view-all.js"></script>
+</body>
+
+</html>

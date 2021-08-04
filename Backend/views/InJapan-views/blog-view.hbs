@@ -1,0 +1,41 @@
+
+{{#if blogPost}}
+{{#each blogPost}}
+<div class="section-wrapper">
+    <div class="left-side">
+
+        <div class="blog-photo">
+
+            <h1 class="blog-title">{{ title }} </h1>
+            <h5>{{ subtitle }}</h5>
+            <img src="{{ image }}" alt="image"> <br>
+            <small>{{ dateCreatedOn }}</small>
+        </div>
+
+
+        <div class="blog-content-wrapper">
+            <div class="blog-content">
+
+                <div class="blog-writings">
+
+
+                    {{{ body }}}
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="about-wrapper hide">
+        <h4 class="about-header"> <i class="fa fa-arrow-down"></i> About Me <i class="fa fa-arrow-down"></i>
+        </h4>
+        <p class="about-text">I am a huge nerd that enjoys playing games, building tech, watching anime, and
+            working out. I currently live in Japan, and aspire to fuel others expectations with realistic
+            information about Japan</p>
+    </div>
+</div>
+{{/each}}
+{{/if}}

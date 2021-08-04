@@ -1,0 +1,18 @@
+<main class="list-container">
+    <h1 class="header">Admin Dashboard - Tags</h1>
+    {{#if tags}}
+    {{#each tags}}
+    <section class="blog">
+        <h2 class="title">{{this.name}}</h2>
+
+        <div class="button-group">
+            <form action="/admin/tag/{{this._id}}?_method=DELETE" method="POST">
+                <button type="submit" class="delete">Delete</button>
+            </form>
+        </div>
+
+
+    </section>
+    {{/each}}
+    {{/if}}
+</main>

@@ -1,0 +1,90 @@
+<div class="blog-header-text">
+    <p>こんにちは - Welcome to InJapan</p>
+    <h1>Blogs</h1>
+</div>
+
+<section class="blog-feature-wrapper">
+    <div class="blog-feature-element-wrapper">
+        {{#if featuredBlogPost}}
+        {{#each featuredBlogPost}}
+        <div class="blog-feature-element">
+
+            <div class="left-element">
+                <p class="featured"><i class="fa fa-indent" aria-hidden="true"></i>
+                    Featured</p>
+                <h2 class="featured-title">{{ title }}</h2>
+                <h4 class="featured-description">{{description}}</h4>
+                <p class="featured-date">{{dateCreatedOn}}</p>
+                <a class="button-wrapper" href="/blogs/{{ slug }}">
+                    <div class="button" >Read More...</div>
+                </a>
+
+            </div>
+            <div class="right-element">
+                <img src="{{image}}" alt="image">
+            </div>
+        </div>
+        {{/each}}
+        {{/if}}
+    </div>
+</section>
+
+<main class="blog-list-wrapper">
+    <div class="blog-list-background">
+        <div class="blog-list">
+
+            <div class="blog-card-container">
+                {{#if allBlogPosts}}
+                {{#each allBlogPosts}}
+                <a class="blog-card" href="/blogs/{{ slug }}">
+                    <div class="">
+                        <div class="blog-card-image">
+                            <img src="{{image}}" alt="{{image}}">
+                        </div>
+                        <div class="blog-card-text">
+                            <h5>{{ title }}</h5>
+                        </div>
+
+                    </div>
+                </a>
+
+                {{/each}}
+                {{/if}}
+            </div>
+
+        </div>
+        <div class="blog-sidebar">
+            <div class="search-icon hide">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <div class="search-bar">
+                    <input type="search" name="search" id="search">
+                    <button class="search-bar-button" type="submit">Submit</button>
+                </div>
+            </div>
+            <div class="minimize-icon"> <i class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="tag-list-wrapper">
+                <div class="tag-list">
+                    {{#if tags}}
+                    {{#each tags}}
+                    <div class="tag-list-button-area">
+                        <a class="tag-list-button" id="tags">{{name}}</a>
+                    </div>
+                    {{/each}}
+                    {{/if}}
+                    <div class="tag-list-button-area">
+                        <a class="tag-list-button" id="recent">View Recent</a>
+                    </div>
+                    <div class="tag-list-button-area">
+                        <a class="tag-list-button" href="/blogs/view">View All Blogs</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="view-blogs">
+
+            </div>
+        </div>
+
+    </div>
+</main>
+<script src="/js/search.js"></script>
