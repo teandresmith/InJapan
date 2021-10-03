@@ -45,7 +45,7 @@ body {
   background-repeat: repeat;
   background-size: cover;
   min-width: 100%;
-  min-height: 100vmax;
+  min-height: 100%;
   z-index: -1;
   opacity: 0.07;
 }
