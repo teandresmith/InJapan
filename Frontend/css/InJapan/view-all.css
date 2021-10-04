@@ -174,7 +174,6 @@ body {
     overflow-x: hidden;
   }
   .overlay {
-    background-repeat: repeat-y;
     opacity: 0.1;
   }
   .blog-container {
@@ -222,7 +221,6 @@ body {
     overflow-x: hidden;
   }
   .overlay {
-    background-repeat: repeat-y;
     opacity: 0.1;
   }
   .blog-container {
