@@ -45,6 +45,7 @@ body {
   background-image: url('/images/cool-image.png');
   background-repeat: repeat;
   background-size: cover;
+  background-position: center;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
@@ -441,7 +442,7 @@ body {
   transition: ease-in 0.2s;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 429px) {
   .entire-container {
     padding: 10px;
     overflow-x: hidden;
@@ -572,7 +573,7 @@ body {
   }
 }
 
-@media screen and (min-width: 427px) and (max-width: 900px) {
+@media screen and (min-width: 430px) and (max-width: 900px) {
   .entire-container {
     padding: 10px;
     overflow-x: hidden;
